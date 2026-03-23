@@ -56,7 +56,7 @@ schema:
   - source: str
     options: str?
   external_folder: match(^[^/].+)
-  external_device: match(^(/dev/sd[a|b|c|d|e][1|2|3|4|5])?)
+  external_device: str?
 options:
   folders:
   - source: /config
