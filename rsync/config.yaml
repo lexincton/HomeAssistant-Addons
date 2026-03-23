@@ -29,7 +29,7 @@ map:
 - type: media
   read_only: false
 schema:
-  private_key_file: match(^/ssl/.+)
+  private_key_file: str
   username: str
   folders:
   - local: str
@@ -39,7 +39,7 @@ schema:
   remote_host: str
   remote_port: port?
 options:
-  private_key_file: /ssl/rsync/id_rsa
+  private_key_file: ''
   username: user
   folders:
   - local: /config
